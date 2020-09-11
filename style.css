@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #000000;
+    box-sizing: border-box;
+    
+}
+nav {
+    width: auto;
+    min-height: 8vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    position: sticky;
+    margin: 10px 50px;
+}
+
+nav .logo h2 {
+    color: #E15EED;
+}
+.input {
+    color: #262626;
+}
+.input i {
+    padding: 10px; 
+    min-width: 10px; 
+    margin-left: -50px;
+    color: rgba(255, 255, 255, 0.8);
+    ;
+    cursor: pointer;
+    
+}
+.input-field { 
+    width: 200px; 
+    padding: 10px; 
+    text-align: center; 
+    background: rgba(196, 196, 196, 0.28);
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+input::placeholder {
+    color: #ffffff;
+} 
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.temp {
+    /* margin: 0 auto; */
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+
+}
+.first-container {
+    display: flex;
+    width: auto;
+    /* border: 1px solid red; */
+    margin: 50px;
+    height: 20rem;
+
+}
+.first-container > div:nth-child(1) {
+    display: flex;
+    width: 30rem;
+}
+
+.description {
+    color: #C4C4C4;  
+    margin: 20px;
+    margin-top: 20px;
+}
+.other-info {
+    margin: 0 auto;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.border-bottom {
+    width: 120px;
+    margin-top: 10px;
+    /* margin-left: -30px; */
+    border-bottom:  4px solid #E15EED;
+    margin-bottom: 20px;
+}
+.cities {
+width: 32rem;
+height: auto;
+margin-top: -15rem;
+margin-left: 50px;
+}
+.cities h3 {
+    font-family: Muli;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    color: #E15EED;
+    
+}
+.popular {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.popular > img {
+    width: 6rem;
+    height: 6rem;
+}
+
+
+
+@media  (max-width: 760px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+        align-items: center;
+        margin: 0px;
+    }
+    .first-container {
+        display: flex;
+        flex-direction: column;
+        height: 27rem;
+        justify-content: space-between;
+    }
+    .border-bottom {
+        margin-bottom: -10px;
+    }
+    .other-info {
+        height: inherit;
+        justify-content: space-between;
+    }
+    .cities {
+        margin-top: 0px;
+        width: auto;
+    }
+    .popular {
+        /* width: auto; */
+        flex-wrap: wrap;
+        height: 15rem;
+    }
+    
+ }

@@ -1,0 +1,17 @@
+{
+    "name": "Smash-It",
+    "start_url": " . ",
+    "short_name": "smash",
+    "display": "standalone",
+    "background_color": "#000000",
+    "description": "A weather app",
+    "icons": [
+        {
+            "src": "./favicon.png",
+            "sizes": "300x300",
+            "type": "images/png"
+        }
+        
+    ]
+    
+}
