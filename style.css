@@ -135,11 +135,15 @@ margin-left: 50px;
         justify-content: space-between;
     }
     .border-bottom {
-        margin-bottom: -10px;
+        margin-bottom: 0px;
     }
     .other-info {
+        margin: 0px;
         height: inherit;
         justify-content: space-between;
+    }
+    .other-info > p:nth-child(1) {
+        margin-top: 30px;
     }
     .cities {
         margin-top: 0px;
