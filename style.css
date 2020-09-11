@@ -129,8 +129,8 @@ margin-left: 50px;
         margin: 0px;
     }
     h1 {
-        text-align: justify;
-        margin-left: 50px;
+        /* text-align: justify;
+        margin-left: 50px; */
     }
     .first-container {
         display: flex;
