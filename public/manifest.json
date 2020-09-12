@@ -4,12 +4,16 @@
     "short_name": "smash",
     "display": "standalone",
     "background_color": "#000000",
+    "theme_color": "#ffffff",
+    "scope": "/",
+    "orientation": "any",
     "description": "A weather app",
     "icons": [
         {
-            "src": "./favicon.png",
-            "sizes": "300x300",
-            "type": "images/png"
+            "src": "./icon 1 (1).svg",
+            "sizes": "320x320",
+            "type": "images/png",
+            "purpose": "any maskable"
         }
         
     ]

@@ -47,6 +47,13 @@ const weatherReport = () => {
 
         let pressure = document.querySelector('.pressure')
         pressure.innerText = `${weather.main.pressure}mmHg` 
+
+        localStorage.setItem("pressure", pressure.innerHTML);
+        const saved = localStorage.getItem("pressure")
+        if(saved) {
+            pressure.innerHTML = saved;
+        }
+        console.log(localStorage);
     }
     const dateBuilder = (d) => {
         let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -64,13 +71,15 @@ const weatherReport = () => {
     
 }
 
+
 weatherReport();
-async function registerSW() {
-    if('serviceworker' in navigator) {
-        try {
-            await navigator.serviceworker.register('./sw.js');
-        } catch (e) {
-            console.log('SW registration failed')
-        }
-    }
-}
+// async function registerSW() {
+//     if('serviceworker' in navigator) {
+//         try {
+//             await navigator.serviceworker.register('./sw.js');
+//         } catch (e) {
+//             console.log('SW registration failed')
+//         }
+//     }
+// }
+

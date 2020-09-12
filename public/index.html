@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Stay informed about the weather whenever from wherever.">
     <title>Smash It</title>
+    <link rel="shortcut icon" href="./favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" href="./icon 1 (1).svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="manifest.json">
   </head>
 <body>
     <nav>
@@ -48,6 +53,17 @@
       <img src="./Rectangle 20.png" alt="">
   </div>
 </section>
+<section class="footer">
+  <div class="border-bottom-long"></div>
+  <p>crafted with love@Devgrachy</p>
+</section>
     <script src="./script.js"></script>
+    <script>
+      if (!navigator.serviceWorker.controller) {
+          navigator.serviceWorker.register("/sw.js").then(function(reg) {
+              console.log("Service worker has been registered for scope: " + reg.scope);
+          });
+      }
+     </script>
 </body>
 </html>

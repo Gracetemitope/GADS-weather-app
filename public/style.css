@@ -116,7 +116,19 @@ margin-left: 50px;
     width: 6rem;
     height: 6rem;
 }
-
+.footer {
+    margin-top: 7rem;
+}
+.footer p {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+.border-bottom-long {
+    width: auto;
+    border-bottom: 2px dashed #E15EED;
+    
+}
 
 
 @media  (max-width: 760px) {
